@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* COLORS
+ blue = #2ca3d4, #489CD0 | navigation, bg
+ dark gray = #333333 footer bg
+ gray = #FAFAFA |
+ orange = #f5a214 | links, links-hover
+ green = #58be35 | active-link
+ */
+
+body, h1, h2, h3, h4{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+}
+a,p,span,
+address,
+ul,li{
+ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+ /* ICONS, BUTTONS = i, spans */
+i.encircle,
+span.encircle{
+    text-align: center;
+    background: #FFF;
+    padding: 3px;
+    /*
+    border: 3px solid #489CD0;
+    border-radius: 100%;
+    */
+    border-radius: 100%;
+    color: #489CD0;
+}
+i.encircle:hover,
+span.encircle:hover,
+i.encircle:focus,
+span.encircle:focus {
+  color:#f5a214;
+}
+.btn{
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #f5a214;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    -moz-border-radius-bottomright: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+.btn-primary{
+    background-color: #489CD0;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+/* END OF ICONS,BUTTONS */
+.hero-unit > h1,
+.hero-unit > p{  color: rgb(255, 255, 255);}
+/* CONTENTS - Sections, DIV */
+
+section.sec-content{  padding:50px; }
+section:nth-of-type(even) { background-color: #FAFAFA;}
+.sec-header{
+  background-color: #489CD0;
+  padding:100px;
+}
+
+/* END OF CONTENTS */
+
+/* make img grey logo*/
+img.image-grey {
+    -webkit-filter: grayscale(100%);
+    opacity: 0.4;
+}
+img.ul-company-logo{ padding: 5px;}
+
+/* NAVIGATION  */
+ #custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(72, 156, 208, 1);
+    border-bottom-width: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(245, 162, 20, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #489cd0;
+}
+/*  end NAVIGATION */
+
+/* FOOTER */
+footer{
+  color:#FAFAFA;
+  background-color:  #333333;
+  min-height: 30px;
+  font-size: 13px;
+}
+/*  end FOOTER */
