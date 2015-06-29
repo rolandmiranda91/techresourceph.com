@@ -67,6 +67,12 @@ span.encircle:focus {
     color: #FFF;
     border: 2px solid #FFF;
 }
+.tr-logo-link{
+  padding: 8px;
+}
+.tr-logo {
+  height: 35px;
+}
 /* END OF ICONS,BUTTONS */
 .hero-unit > h1,
 .hero-unit > p{  color: rgb(255, 255, 255);}
